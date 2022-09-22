@@ -141,10 +141,10 @@ class FloatingLayout : FrameLayout {
             FabMenuAnimation.ANIMATION_POP_DOWN -> collapseDirection(View.TRANSLATION_Y, 1)
         }
 
-        if (fabAnimateMenu) {
-            ObjectAnimator.ofFloat(views[0], View.ROTATION, 45f, 0f)
-                    .apply { duration = fabAnimateDuration.toLong() }.start()
-        }
+//         if (fabAnimateMenu) {
+//             ObjectAnimator.ofFloat(views[0], View.ROTATION, 45f, 0f)
+//                     .apply { duration = fabAnimateDuration.toLong() }.start()
+//         }
     }
 
     private fun collapseDirection(viewProperty: Property<View, Float>, directionFactor: Int) {
@@ -187,9 +187,9 @@ class FloatingLayout : FrameLayout {
             FabMenuAnimation.ANIMATION_POP_DOWN -> expandDirection(View.TRANSLATION_Y, 1)
         }
 
-        if (fabAnimateMenu) {
-            ObjectAnimator.ofFloat(views[0], View.ROTATION, 0f, 45f).start()
-        }
+//         if (fabAnimateMenu) {
+//             ObjectAnimator.ofFloat(views[0], View.ROTATION, 0f, 45f).start()
+//         }
     }
 
     private fun expandDirection(viewProperty: Property<View, Float>, directionFactor: Int) {
